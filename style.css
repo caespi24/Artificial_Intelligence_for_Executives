@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.6)),url(images/main_bg.gif);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #0c0c0c;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #0c0c0c;
+    border-radius: 5rem;
+}
+
+nav{
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+}
+
+.main-logo{
+    width: auto;
+    height: 50px;
+    margin: .3rem 0;
+}
+
+.main-menu{
+    position: absolute;
+    top: .1px;
+}
+
+.btn-main-menu{
+    background: transparent;
+    box-shadow: none;
+    transition: .2s linear;
+}
+
+.btn-main-menu:focus{
+    transform: rotateZ(90deg);
+}
+
+.btn-main-menu:hover{
+    background: transparent;
+    box-shadow: none;
+    transform: rotateZ(90deg);
+}
+
+.main-menu ul{
+    margin-right: -10rem;
+    margin-top: -.35rem;
+}
+
+/* Overview */
+
+.main_bg{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.ov-text{
+    font-weight: bolder;
+    color: white;
+}
+
+.ov-text-p{
+    text-align: justify;
+    color: white;
+    font-size: 20.5px;
+}
+
+.ov-cp{
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    box-shadow: 0rem 0rem .5rem .2rem white;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.ov-cp::-webkit-scrollbar{
+    width: .5rem;
+}
+
+.ov-cp::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.ov-cp::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 5rem;
+}
+
+/* Attendees CSS */
+
+.main-header{
+    margin: 15rem 0 0 0;
+}
