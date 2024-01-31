@@ -1,10 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.6)),url(images/main_bg.gif);
+    background-image: url(images/BG_L.png);
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
-}
+    background-repeat: no-repeat;
+    }
 
 html{
     overflow-x: hidden;
@@ -62,6 +62,60 @@ nav{
 
 /* Overview */
 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content{
+    margin-top: 10rem;
+}
+
+.home-img img{
+    min-width: 5%;
+    max-width: 85%;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-img-small img{
+    min-width: 5%;
+    max-width: 85%;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }  
+    100%{
+        transform: translateY(0);
+    }  
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #863ae0;
+    font-weight: bolder;
+    margin-top: 2rem;
+    /* font-size: 2rem; */
+    /* padding-top: 2rem; */
+    /* margin: 2.5rem 0 0 20rem; */
+    border-radius: 50px;
+    padding: 1rem;
+    height: 50px;
+}
+
 .main_bg{
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -75,42 +129,4 @@ nav{
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-}
-
-.ov-text{
-    font-weight: bolder;
-    color: white;
-}
-
-.ov-text-p{
-    text-align: justify;
-    color: white;
-    font-size: 20.5px;
-}
-
-.ov-cp{
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 20px;
-    box-shadow: 0rem 0rem .5rem .2rem white;
-    overflow-y: auto;
-    height: 70vh;
-}
-
-.ov-cp::-webkit-scrollbar{
-    width: .5rem;
-}
-
-.ov-cp::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-.ov-cp::-webkit-scrollbar-thumb{
-    background: transparent;
-    border-radius: 5rem;
-}
-
-/* Attendees CSS */
-
-.main-header{
-    margin: 15rem 0 0 0;
 }
