@@ -6,16 +6,6 @@ body{
     background-repeat: no-repeat;
     }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -34,17 +24,20 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
+section{
+    height: 100vh;
+}
+
 nav{
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
 }
-
 
 .main-logo{
     /* width: auto; */
     height: 50px;
     margin: .3rem 0 ;
 }
-/* 
+
 .main-menu{
     position: absolute;
     top: .1px;
@@ -69,7 +62,7 @@ nav{
 .main-menu ul{
     margin-right: -10rem;
     margin-top: -.35rem;
-} */
+}
 
 /* Landing Page CSS */
 
@@ -80,7 +73,7 @@ nav{
 }
 
 .home-content{
-    /* margin-top: 10rem; */
+    margin-top: 10rem;
 }
 
 .home-img img{
@@ -145,7 +138,10 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background-image: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)), url(images/main_bg.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .overview-img img{
@@ -196,10 +192,17 @@ nav{
 }
 
 .collapsible-body{
-    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
 }
 
 /* Seminar Dates */
+.dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 table{
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     border-radius: 10px;
