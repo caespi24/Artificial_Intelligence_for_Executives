@@ -6,6 +6,16 @@ body{
     background-repeat: no-repeat;
     }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -28,12 +38,13 @@ nav{
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
 }
 
-.main-logo{
-    width: auto;
-    height: 50px;
-    margin: .3rem 0;
-}
 
+.main-logo{
+    /* width: auto; */
+    height: 50px;
+    margin: .3rem 0 ;
+}
+/* 
 .main-menu{
     position: absolute;
     top: .1px;
@@ -58,7 +69,7 @@ nav{
 .main-menu ul{
     margin-right: -10rem;
     margin-top: -.35rem;
-}
+} */
 
 /* Landing Page CSS */
 
@@ -69,7 +80,7 @@ nav{
 }
 
 .home-content{
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 
 .home-img img{
